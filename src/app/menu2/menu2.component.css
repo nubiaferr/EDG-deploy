@@ -1,0 +1,63 @@
+
+.pages{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.bg-menu {
+  background-color: #3E90CC;
+  color: white;
+}
+
+.btn-info {
+  background-color: white;
+  color: #3E90CC;
+  border-color: white;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #092A71 !important;
+  border-color: white;
+}
+
+@media(max-width: 800px){
+  .pages{
+    margin: 5px;
+    width: 100%;
+  }
+
+  .pages-mb{
+    display: hide;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudoNavbarSuportado{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+ul.navbar-nav{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+a{
+  margin: 5px auto !important;
+}
+
+.btn-mob{
+  margin: 5px auto !important;
+}
+
+
+
+
+}

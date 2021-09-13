@@ -1,0 +1,67 @@
+<a routerLink='/inicio' class="text-left text-secondary p-2 m-3">
+    <i class="fa fa-angle-double-left" aria-hidden="true"></i> Início
+  </a>
+
+<div class="row d-flex justify-content-center p-5 m-0">
+
+  <div class="col-md-4 login-box p-5">
+    <h1 class="text-center mb-3">Atualizar Perfil</h1>
+
+    <div class="form-group mt-5">
+      <input
+        [(ngModel)]='usuario.nome'
+        type="text"
+        name="nome"
+        id="nome"
+        class="form-control"
+        placeholder="Nome"
+        required
+      />
+    </div>
+
+    <!-- <div class="form-group">
+      <input
+      [(ngModel)]='usuario.email'
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="E-mail"
+        required
+      />
+    </div> -->
+
+    <div class="form-group">
+      <input
+      (input)='confirmaSenha($event)'
+        type="password"
+        name="senha"
+        id="senha"
+        class="form-control"
+        placeholder="Senha"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <input
+      [(ngModel)]='usuario.senha'
+        type="password"
+        name="senha"
+        id="confirmeSenha"
+        class="form-control"
+        placeholder="Digite a senha novamente"
+        required
+      />
+    </div>
+
+    <hr class="m-4">
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-danger mr-4" type="submit" routerLink="/inicio">Cancelar</button>
+      <button
+      (click)='atualizar()'
+      class="btn btn-success" type="submit">Atualizar</button>
+
+    </div>
+  </div>
+</div>

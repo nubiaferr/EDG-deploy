@@ -1,0 +1,166 @@
+
+#menu{
+  background: #3E90CC !important;
+}
+#funciona {
+  background: white;
+  color: #092A71 ;
+}
+#destaques {
+  background: #BF0603 !important;
+}
+
+.icon {
+  font-size: 50px;
+  color: #BF0603 !important;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  color: #092A71;
+}
+
+.titulo {
+  color: #3E90CC;
+  font-size: 48px;
+}
+
+.titulo2 {
+  color: #3E90CC;
+  font-size: 18px;
+}
+
+.menu:hover {
+  background-color: #3E90CC;
+  color: white;
+}
+
+.btn{
+  color: #3E90CC;
+  border-color: #3E90CC;
+}
+
+.btn:hover {
+  background-color: #3E90CC;
+  color: white;
+}
+
+.btn-post{
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #3E90CC;
+  border-color: #3E90CC;
+  box-shadow: none;
+  outline: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3E90CC;
+  border-color: #3E90CC;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.frontside {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.frontside .card{
+  min-height: 230px;
+}
+.backside .card {
+  min-height: 230px;
+  background-color: #092A71;
+}
+.backside .card a {
+  font-size: 18px;
+  color: #3E90CC !important;
+}
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #BF0603 !important;
+}
+
+@media (max-width: 800px) {
+  .img-edg img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .cont-mob{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .t-mob{
+    text-align: center;
+  }
+}

@@ -1,0 +1,67 @@
+.icon {
+  font-size: 30px;
+}
+
+.icon2 {
+  font-size: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #3E90CC !important;
+  color: white;
+}
+
+.menu:hover, .btn:hover, .titlePost{
+  background-color: #3E90CC;
+  color: white;
+  border-color: none;
+}
+
+.btn{
+  color: #3E90CC;
+  border-color: #3E90CC;
+}
+
+.rounded-pill{
+  color: #bf0603;
+  border-color: #bf0603;
+}
+
+.btn-post{
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: white;
+  background-color: #bf0603;
+}
+
+@media(max-width: 800px){
+  #pills-tab li{
+    width: 100%;
+    height: 30%;
+  }
+
+  #pills-tab a{
+    margin: 0 auto !important;
+  }
+
+  .rounded-pill{
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+
+  .card-title{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+

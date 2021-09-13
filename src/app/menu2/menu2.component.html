@@ -1,0 +1,64 @@
+<div class="menu">
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-menu">
+  <!-- Logo vai aqui -->
+  <nav class="navbar navbar-dark bg-menu p-0">
+    <a class="navbar-brand" routerLink='/home'>
+      <img class="ml-3" src="https://i.imgur.com/NSwwnQ2.png" height="40px" alt="">
+    </a>
+  </nav>
+  <!-- Botão responsivo -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse d-flex justify-content-end" id="conteudoNavbarSuportado">
+
+    <!-- Itens do menu-->
+
+    <!-- Barra de pesquisa -->
+    <div class="d-flex pages">
+      <!-- Itens do menu-->
+      <div class="btn-group btn-group-toggle w-100 pages-mb" data-toggle="buttons">
+        <label class="btn btn-info active">
+          <input type="radio" routerLink='/inicio' name="options" id="option1" autocomplete="off" value="false"><i
+            class="fa fa-home mr-1" aria-hidden="true"></i> PÁGINA INICIAL
+        </label>
+        <label class="btn btn-info">
+          <input routerLink='/meus-posts' type="radio" name="options" id="option2" autocomplete="off" value="true"><i
+            class="fa fa-newspaper-o mr-1" aria-hidden="true"></i> MINHAS POSTAGENS
+        </label>
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-white mr-3" routerLink='/sobre'> <i class="fa fa-info-circle mr-1"
+            aria-hidden="true"></i> SOBRE </a>
+      </li>
+
+      <!-- Dropdown -->
+      <li>
+        <div class="dropdown">
+          <button class="btn btn-outline-light dropdown-toggle mr-4 btn-mob" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle mr-1"
+              aria-hidden="true"></i> {{ nome }}
+          </button>
+          <div class="dropdown-menu dropdown-menu-right mr-4" aria-labelledby="dropdownMenuButton">
+            <p class="text-center">Olá, {{ nome }}!</p>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" [routerLink]="['/user-edit', id]"><i class="fa fa-pencil mr-1"
+                aria-hidden="true"></i> Editar Perfil</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item" (click)='sair()'><i class="fa fa-sign-out mr-2" aria-hidden="true"></i> Sair</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
