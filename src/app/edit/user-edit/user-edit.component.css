@@ -1,0 +1,14 @@
+
+.bg-login{
+  background-image: url('https://i.imgur.com/TdfbBh3.png');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.login-box{
+  background-color: #3E90CC ;
+  border-radius: 4px;
+  color: white;
+}
+
